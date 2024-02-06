@@ -1,4 +1,4 @@
-Proyecto: Plataforma de agendado de citas para psicologa
+Proyecto: Plataforma para registro alumnos por medio de la credencial
 
 Tecnología: Node.js, React, javascript, Supabase
 
