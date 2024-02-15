@@ -1,6 +1,6 @@
-Proyecto: Plataforma para registro alumnos por medio de la credencial
+Proyecto: Plataforma para dar citas a psicologa
 
-Tecnología: Node.js, React, javascript, Supabase
+Tecnología: Next.js, React, javascript, MongoDB, Supabase
 
 Integrantes:
 Cristina Suárez Franco
