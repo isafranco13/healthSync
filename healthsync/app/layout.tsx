@@ -21,7 +21,7 @@ export default function RootLayout({
       <Head>
         <link rel="icon" href="/atomo.svg" type="image/svg+xml" />
       </Head>
-      <body className='relative'>
+      <body className='static'>
         <Navbar />
         {children}
         <Footer />
