@@ -20,13 +20,15 @@ const Intro = () => {
           Terapia Alternativa
         </h1>
 
-        <p className="hero__subtitle">
-          ¿Qué es?
+        <p className="hero__subtitle text-justify	">
+        Son técnicas basadas en la aplicación de la energía con el objetivo de restaurar el equilibrio y la armonía física, mental, 
+        emocional y espiritual de la persona.
         </p>
-
+        <br />
+        <br />          
         <CustomButton
           title="Explorar terapias"
-          containerStyles="bg-teal-100 text-green rounded-full mt-10"
+          containerStyles="text-white rounded-full bg-pink-400 min-w-[100px] font-medium mt-10"
           handleClick={handleScroll}
         />
       </div>
