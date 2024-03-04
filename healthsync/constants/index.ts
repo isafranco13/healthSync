@@ -2,8 +2,8 @@ export const footerLinks = [
   {
     title: "About",
     links: [
-/*      { title: "How it works", url: "/" },
-      { title: "Featured", url: "/" },
+      { title: "¿Cómo funciona?", url: "/" },
+/*      { title: "Featured", url: "/" },
       { title: "Partnership", url: "/" },
       { title: "Bussiness Relation", url: "/" },
     */    ],
@@ -13,13 +13,13 @@ export const footerLinks = [
     links: [
       { title: "Adriana Medina Nuñez", url: "/" },
       { title: "Isabel Beatriz Franco Díaz", url: "/" },
-      { title: "Cristina Suárez FRanco", url: "/" },
+      { title: "Cristina Suárez Franco", url: "/" },
     ],
   },
   {
     title: "Socials",
     links: [
-//      { title: "Whatsapp", url: "/" },
+      { title: "Whatsapp", url: "https://www.whatsapp.com/download" },
     ],
   },
 ];

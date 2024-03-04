@@ -19,14 +19,14 @@ const Navbar = () => {
 
                 <div className="ml-auto flex space-x-5">
                     <CustomButton
-                        title="Sign In"
+                        title="Crear Cuenta"
                         btnType="button"
-                        containerStyles="text-primary-blu rounded-full bg-white min-w-[100px]"
+                        containerStyles="text-white rounded-full bg-pink-400 min-w-[100px] font-semibold"
                     />
                     <CustomButton
-                        title="Log In"
+                        title="Iniciar Sesión"
                         btnType="button"
-                        containerStyles="text-primary-blu rounded-full bg-white min-w-[100px]"
+                        containerStyles="text-white	rounded-full bg-pink-400 min-w-[100px] font-semibold"
                     />
                 </div>
             </nav>

@@ -16,14 +16,22 @@ export default function Home() {
 
         <section>
           <p> Aquí van las terapias... </p>
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />          
+        <br />          
+        <br />          
               <div className="flex justify-end">
           <CustomButton
           title="Registrarme"
-          containerStyles="bg-teal-100 text-green rounded-full mt-10"
+          containerStyles="text-white rounded-full bg-pink-400 min-w-[100px] font-medium mt-10"
+
         /></div>
         
-        <br />
-        <br />
         <br />
         <br />
         <br />
