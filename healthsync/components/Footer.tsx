@@ -40,12 +40,14 @@ const Footer = () => (
       <p className="text-base">@2024 HealthSync. All rights reserved</p>
 
       <div className="footer__copyrights-link">
-        <Link href="/" className="text-green-500 text-base">
+      <p className="text-base">Privacy & Policy</p>
+      <p className="text-base">Terms & Condition</p>
+       {/* <Link href="/" className="text-green-500 text-base">
           Privacy & Policy
         </Link>
         <Link href="/" className="text-green-500 text-base">
           Terms & Condition
-        </Link>
+              </Link>*/}
       </div>
     </div>
   </footer>
