@@ -1,4 +1,5 @@
 import { CustomButton, Intro } from "@/components";
+import Catalog from "@/components/Catalog";
 import QBP from "@/components/QBP";
 import Image from "next/image";
 
@@ -15,17 +16,9 @@ export default function Home() {
         </div>
 
         <section>
-          <p> Aquí van las terapias... </p>
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />          
-        <br />          
-        <br />          
-              <div className="flex justify-end">
+          <Catalog/>
+          
+        <div className="flex justify-end">
           <CustomButton
           title="Registrarme"
           containerStyles="text-white rounded-full bg-pink-400 min-w-[100px] font-medium mt-10"
