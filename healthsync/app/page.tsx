@@ -1,12 +1,51 @@
+import { CustomButton, Intro } from "@/components";
+import Catalog from "@/components/Catalog";
+import QBP from "@/components/QBP";
 import Image from "next/image";
 
 export default function Home() {
+  return (
+    <main className="overflow-hidden">
+      <Intro />
+
+
+      <div className='mt-12 padding-x padding-y max-width' id='discover'>
+        <div className='home__text-container'>
+          <h1 className='text-4xl font-extrabold'>Catálogo de terapias</h1>
+          <p>Explora las terapias que mas te llamen la atención</p>
+        </div>
+
+        <section>
+          <Catalog/>
+          
+        <div className="flex justify-end">
+          <CustomButton
+          title="Registrarme"
+          containerStyles="text-white rounded-full bg-pink-400 min-w-[100px] font-medium mt-10"
+
+        /></div>
+        
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+
+        </section>
+      </div>
+
+      <QBP />
+
+    </main>
+  );
+}
+/*export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
       <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
         <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
           Bienvenido a HealthSync &nbsp;
-          <code className="font-mono font-bold">app/page.tsx</code>
+          <code className="font-mono font-bold">using next.js</code>
         </p>
         <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
           <a
@@ -109,5 +148,4 @@ export default function Home() {
         </a>
       </div>
     </main>
-  );
-}
+  );*/
