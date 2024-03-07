@@ -1,6 +1,45 @@
+import { CustomButton, Intro } from "@/components";
+import Catalog from "@/components/Catalog";
+import QBP from "@/components/QBP";
 import Image from "next/image";
 
 export default function Home() {
+  return (
+    <main className="overflow-hidden">
+      <Intro />
+
+
+      <div className='mt-12 padding-x padding-y max-width' id='discover'>
+        <div className='home__text-container'>
+          <h1 className='text-4xl font-extrabold'>Catálogo de terapias</h1>
+          <p>Explora las terapias que mas te llamen la atención</p>
+        </div>
+
+        <section>
+          <Catalog/>
+          
+        <div className="flex justify-end">
+          <CustomButton
+          title="Registrarme"
+          containerStyles="text-white rounded-full bg-pink-400 min-w-[100px] font-medium mt-10"
+
+        /></div>
+        
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+
+        </section>
+      </div>
+
+      <QBP />
+
+    </main>
+  );
+}
+/*export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
       <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
@@ -109,5 +148,4 @@ export default function Home() {
         </a>
       </div>
     </main>
-  );
-}
+  );*/
