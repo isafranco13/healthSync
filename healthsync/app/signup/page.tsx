@@ -2,7 +2,7 @@
 import Link from "next/link"
 import Image from 'next/image';
 import CustomButton from '../../components/CustomButton';
-import {signIn, useSession} from 'next-auth/react'
+import {signIn} from 'next-auth/react'
 
 export default function Form(){
     {/*const {data: session}=useSession()
