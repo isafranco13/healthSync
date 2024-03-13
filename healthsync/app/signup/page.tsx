@@ -65,7 +65,7 @@ export default function Form(){
                         width={40}
                         height={40}
                         className="" 
-                        />&nbsp;Continuar con Google</button>
+                        />Continuar con Google</button>
                         </div>
                     </div>
                     
