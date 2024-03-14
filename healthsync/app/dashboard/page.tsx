@@ -1,15 +1,20 @@
 "use client"
-import {  signOut, useSession } from "next-auth/react";
+import { Footer, NavbarSignOut } from "@/components";
 
 export default function dashboard() {
     {/*const {data: session}=useSession()
-    console.log(session) -> EN CASO DE QUERER VER AL USUARIO (SOLO USARLO EN LOCAL)*/}
+    {/* if (process.env.NODE_ENV === 'development') {
+        console.log(session); // TO VIEW THE USER (USE ONLY IN LOCAL)
+    } */}
     return(
-        <main>
-            <br /><br /><br /><br /><br />
-            <div className="justify-center items-center">estas dentro</div>
-            <button onClick={() => signOut()}>Sign Out</button>    
-        </main>
+        <>
+            <NavbarSignOut />
+            <main>
+                <br /><br /><br /><br /><br />
+                <div className=" text-center text-4xl font-bold">Estas dentro!!</div>
+            </main>
+            <Footer />
+        </>
         
     )
 }
