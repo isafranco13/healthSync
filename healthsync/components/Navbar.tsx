@@ -27,11 +27,13 @@ const Navbar = () => {
                         containerStyles="text-white rounded-full bg-pink-400 min-w-[100px] font-semibold"
                     />
                     </Link>
-                    <CustomButton
-                        title="Iniciar Sesión"
-                        btnType="button"
-                        containerStyles="text-white	rounded-full bg-pink-400 min-w-[100px] font-semibold"
-                    />
+                    <Link href="/signin">
+                        <CustomButton
+                            title="Iniciar Sesión"
+                            btnType="button"
+                            containerStyles="text-white	rounded-full bg-pink-400 min-w-[100px] font-semibold"
+                        />
+                    </Link>                    
                 </div>
                 
             </nav>
