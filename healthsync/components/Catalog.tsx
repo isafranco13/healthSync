@@ -1,7 +1,9 @@
 "use client";
 
 import { Dialog, Transition } from '@headlessui/react'
+import Link from 'next/link';
 import { Fragment, useState } from 'react'
+import CustomButton from './CustomButton';
 
 interface CustomModalButtonProps {
   imageSrc: string;
@@ -48,6 +50,14 @@ export default function MyModal() {
 
   return (
     <>
+    <div className='mt-12 padding-x padding-y max-width' id='discover'>
+        <div className='home__text-container'>
+          <h1 className='text-4xl font-extrabold'>Catálogo de terapias</h1>
+          <p>Explora las terapias que mas te llamen la atención</p>
+        </div>
+      </div>
+
+      
           {/* Botones arriba */}
       <div className="flex justify-center">
         <CustomModalButton
@@ -147,6 +157,22 @@ export default function MyModal() {
           </div>
         </Dialog>
       </Transition>
+      
+    <div className="flex justify-end">
+      <Link href="/signup">
+        <CustomButton
+          title="Registrarme"
+          containerStyles="text-white rounded-full bg-pink-400 min-w-[100px] font-medium mt-10"
+        />
+      </Link> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    </div>
+
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+
     </>
   );
 }
