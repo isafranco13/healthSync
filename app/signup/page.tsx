@@ -94,6 +94,9 @@ export default function Form(){
                                 
                                 <br />
                             </div>
+                            <div className="flex justify-between">
+                                <p className="text-black text-[17px] font-medium">¿Ya tienes una cuenta? <Link href="/signin" className="text-[#E55E7F]">Inicia sesión</Link></p>
+                            </div> <br />
                                 <div className="flex flex-wrap items-center justify-stretch">
                                     <div className="border-2 min-w-[135px] border-[#FC83A1] inline-block mb-2"></div>
                                     &nbsp;&nbsp;&nbsp;
