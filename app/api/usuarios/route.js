@@ -2,11 +2,11 @@ import { connectDB } from "@/libs/mongodb";
 import  Usuarios from "@/models/usuarios";
 import { NextResponse } from "next/server";
 
-//Esto fue para comprobar que si se esta conectando a la base de datos
+//Función GET para obtener la cantidad de usuarios
 export async function GET() {
     await connectDB();
-    const usuarios = await Usuarios.find({});
-    return NextResponse.json(usuarios);
+    const userCount = await Usuarios.countDocuments({});
+    return NextResponse.json({ count: userCount });
 }
 
 export async function POST(request) {
