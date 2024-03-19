@@ -18,5 +18,6 @@ export async function POST(request) {
         return NextResponse.json({ usuarios });
     } else{
         //Si el usuario ya existe, no hace nada
+        return NextResponse.json({ message: "Usuario ya existe" });
     }
 }
