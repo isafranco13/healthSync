@@ -1,5 +1,5 @@
 import { connectDB } from "@/libs/mongodb";
-import  Usuarios from "@/models/usuarios"
+import  Usuarios from "@/models/usuarios";
 import { NextResponse } from "next/server";
 
 //Esto fue para comprobar que si se esta conectando a la base de datos
@@ -11,7 +11,7 @@ export async function GET() {
 
 export async function POST(request) {
     await connectDB();
-    const data = await request.json()
-    const usuarios = await Usuarios.create(data)
-    return NextResponse.json(usuarios);
+    const data = await request.json();
+    const usuarios = await Usuarios.create(data);
+    return NextResponse.json({ usuarios });
 }
