@@ -1,4 +1,4 @@
-// File: C:\Users\isach\OneDrive\Escritorio\healthSync\app\api\usuarios\route.js
+// File: C:\xampp\htdocs\healthSync\app\api\usuarios\route.js
 import * as entry from '../../../../../app/api/usuarios/route.js'
 import type { NextRequest } from 'next/server.js'
 

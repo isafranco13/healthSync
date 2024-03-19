@@ -3,7 +3,7 @@ import Link from "next/link"
 import Image from 'next/image';
 import CustomButton from '../../components/CustomButton';
 import {signIn} from 'next-auth/react'
-import { Navbar } from "@/components";
+import { Navbar2 } from "@/components";
 import { useRouter } from "next/navigation";
 import React, {useState} from "react";
 
@@ -52,7 +52,7 @@ export default function Form(){
         }*/}
         return(
             <>
-                <Navbar />
+                <Navbar2 />
 
                 <main className="flex flex-col justify-center items-center w-full flex-1">
                     <br /><br /><br /><br />
