@@ -1,14 +1,14 @@
 "use client"
 import Link from "next/link"
 import Image from 'next/image';
-import CustomButton from '../../components/CustomButton';
+import CustomButton from '@/components/CustomButton';
 import {signIn} from 'next-auth/react'
-import { Navbar } from "@/components";
+import { Navbar2 } from "@/components";
 
 export default function Form(){
     return(
         <>
-        <Navbar />
+        <Navbar2 />
 
         <main className="flex flex-col justify-center items-center w-full flex-1">
             <br /><br /><br /><br />
@@ -24,20 +24,17 @@ export default function Form(){
                     />
                     <div className="py-9 px-10"><h1 className="text-3xl font-bold text-center">Iniciar Sesión</h1><br />
                         <div className="flex flex-col w-full pl-4">
-                            <div className="flex flex-col items-center w-full"> 
-                                <label className="text-black text-[19px] font-medium block mb-1 w-3/4 mx-auto">
-                                    <input type="email" className="bg-white rounded-lg outline-none text-base h-12 pl-2 w-full" placeholder="Correo"/>
-                                </label> <br />
-                                <label className="text-black text-[19px] font-medium block mb-1 w-3/4 mx-auto">
-                                    <input type="password" className="bg-white rounded-lg outline-none text-base h-12 pl-2 w-full" placeholder="Contraseña"/>
-                                </label>
-                            </div>
-                            <div className="flex flex-col justify-center items-center w-full">
+                            <form className="flex flex-col items-center w-full">                                 
+                                <input type="email" className="bg-white rounded-lg outline-none text-base h-12 pl-2 w-3/4" placeholder="Correo"/>
+                                <br />
+                                <input type="password" className="bg-white rounded-lg outline-none text-base h-12 pl-2 w-3/4" placeholder="Contraseña"/>
+                            
                                 <CustomButton
+                                    btnType="submit"
                                     title="Iniciar Sesión"
                                     containerStyles="text-white rounded-full bg-pink-400 font-medium mt-10"
                                 />
-                            </div><br />
+                            </form><br />
                             <div className="flex justify-between">
                                 <p className="text-black text-[17px] font-medium">¿No tienes cuenta? <Link href="/signup" className="text-[#E55E7F]">Regístrate</Link></p>
                                 <p className="text-black text-[17px] font-medium"><Link href="" className="text-[#E55E7F]">¿Olvidaste tu contraseña?</Link></p>
