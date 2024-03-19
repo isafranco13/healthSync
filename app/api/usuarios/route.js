@@ -12,6 +12,11 @@ export async function GET() {
 export async function POST(request) {
     await connectDB();
     const data = await request.json();
-    const usuarios = await Usuarios.create(data);
-    return NextResponse.json({ usuarios });
+    const userExists = await Usuarios.findOne({ correo: data.correo });
+    if (!userExists) {
+        const usuarios = await Usuarios.create(data);
+        return NextResponse.json({ usuarios });
+    } else{
+        //Si el usuario ya existe, no hace nada
+    }
 }

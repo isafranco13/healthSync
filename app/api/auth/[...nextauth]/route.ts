@@ -1,5 +1,3 @@
-import { connectDB } from '@/libs/mongodb'
-import Usuarios from '@/models/usuarios'
 import NextAuth from 'next-auth'
 import GoogleProvider from 'next-auth/providers/google'
 
@@ -14,23 +12,18 @@ const handler = NextAuth({
             if (account && account.provider === 'google') {
                 const {name, email} = user;
                 try {
-                    await connectDB();
-                    const userExists = await Usuarios.findOne({ email });
-
-                    if (!userExists) {
-                        const res = await fetch('http://localhost:3000/api/usuarios', {
-                            method: 'POST',
-                            headers: {
-                                'Content-Type': 'application/json',
-                            },
-                            body: JSON.stringify({
-                                correo: email,
-                                nombre: name,
-                            }),
-                        });
-                        if (res.ok) {
+                    const res = await fetch('http://localhost:3000/api/usuarios', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json',
+                        },
+                        body: JSON.stringify({
+                            nombre: name,
+                            correo: email,
+                        }),
+                    });
+                    if (res.ok) {
                         return true;
-                        }
                     }
                 } catch (error) {
                     console.error(error);
