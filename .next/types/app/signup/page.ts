@@ -1,4 +1,4 @@
-// File: C:\Users\bombo\Desktop\healthSync\app\signup\page.tsx
+// File: C:\xampp\htdocs\healthSync\app\signup\page.tsx
 import * as entry from '../../../../app/signup/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
