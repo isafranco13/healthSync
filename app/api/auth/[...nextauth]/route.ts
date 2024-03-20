@@ -9,6 +9,9 @@ const handler = NextAuth({
     })],
     callbacks: {
         async signIn({user, account}) {
+            if (account?.provider === 'credentials') {
+                return true;
+            }
             if (account && account.provider === 'google') {
                 const {name, email} = user;
                 try {

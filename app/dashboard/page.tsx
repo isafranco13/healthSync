@@ -1,20 +1,23 @@
-"use client"
 import { Footer, NavbarSignOut } from "@/components";
+import { getServerSession } from "next-auth";
+import { redirect } from "next/navigation";
 
-export default function dashboard() {
-    {/*const {data: session}=useSession()
-    {/* if (process.env.NODE_ENV === 'development') {
-        console.log(session); // TO VIEW THE USER (USE ONLY IN LOCAL)
-    } */}
-    return(
+const Dashboard = async () => {
+    const session = await getServerSession();
+    if (!session) {
+      redirect("/");
+    }
+
+    return (
         <>
             <NavbarSignOut />
             <main>
                 <br /><br /><br /><br /><br />
-                <div className=" text-center text-4xl font-bold">Estas dentro!!</div>
+                <div className=" text-center text-4xl font-bold">¡Estás dentro!</div>
             </main>
             <Footer />
         </>
-        
-    )
-}
+    );
+};
+
+export default Dashboard;
