@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 // File: C:\Users\bombo\Desktop\healthSync\app\dashboard\page.tsx
+=======
+// File: C:\xampp\htdocs\healthSync\app\dashboard\page.tsx
+>>>>>>> 9b342e320fd5268e70714242b3781597deccc684
 import * as entry from '../../../../app/dashboard/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 

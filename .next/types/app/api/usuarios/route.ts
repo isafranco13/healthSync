@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 // File: C:\Users\bombo\Desktop\healthSync\app\api\usuarios\route.js
+=======
+// File: C:\xampp\htdocs\healthSync\app\api\usuarios\route.js
+>>>>>>> 9b342e320fd5268e70714242b3781597deccc684
 import * as entry from '../../../../../app/api/usuarios/route.js'
 import type { NextRequest } from 'next/server.js'
 
