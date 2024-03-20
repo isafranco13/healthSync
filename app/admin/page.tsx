@@ -2,18 +2,38 @@
 import React, { useState, useEffect } from 'react';
 
 export default function Home() {
-    const [userCount, setUserCount] = useState(0);
+    const [usuarios, setUsuarios] = useState<{ _id: string, nombre: string, correo: string, apellido: string }[]>([]);
 
     useEffect(() => {
-        fetch('/api/usuarios') // Endpoint que devuelve la cantidad de usuarios
+        fetch('/api/usuarios')
             .then(response => response.json())
-            .then(data => setUserCount(data.count));
+            .then(data => setUsuarios(data.usuarios));
     }, []);
 
     return (
         <main className="overflow-hidden">
             <div>
-                <h1>Cantidad de Usuarios: {userCount}</h1>
+                <h1>Cantidad de Usuarios: {usuarios.length}</h1><br />
+                <table className='text-center'>
+                    <thead>
+                        <tr>
+                            <th className='pr-10'>Nombre</th>
+                            <th className='pr-10'>Apellido</th>
+                            <th>Correo</th>
+                            {/* Agregar más columnas según la estructura de los usuarios */}
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {usuarios.map(usuario => (
+                            <tr key={usuario._id}>
+                                <td className='pr-10'>{usuario.nombre}</td>
+                                <td className='pr-10'>{usuario.apellido}</td>
+                                <td>{usuario.correo}</td>
+                                {/* Agregar más celdas según la estructura de los usuarios */}
+                            </tr>
+                        ))}
+                    </tbody>
+                </table>
             </div>
         </main>
     );

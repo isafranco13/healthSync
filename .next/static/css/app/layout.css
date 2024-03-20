@@ -567,6 +567,9 @@ video {
 .inline-flex{
   display: inline-flex;
 }
+.table{
+  display: table;
+}
 .h-10{
   height: 2.5rem;
 }
@@ -799,11 +802,17 @@ video {
 .pl-4{
   padding-left: 1rem;
 }
+.pr-8{
+  padding-right: 2rem;
+}
 .pt-10{
   padding-top: 2.5rem;
 }
 .pt-36{
   padding-top: 9rem;
+}
+.pr-10{
+  padding-right: 2.5rem;
 }
 .text-left{
   text-align: left;
