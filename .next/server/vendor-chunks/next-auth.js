@@ -71,6 +71,7 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", ({\n  value: true\n}));
 
 /***/ }),
 
+<<<<<<< HEAD
 /***/ "(rsc)/./node_modules/next-auth/client/_utils.js":
 /*!*************************************************!*\
   !*** ./node_modules/next-auth/client/_utils.js ***!
@@ -81,6 +82,8 @@ eval("\n\nvar _interopRequireDefault = __webpack_require__(/*! @babel/runtime/he
 
 /***/ }),
 
+=======
+>>>>>>> f786494a0b42ce4b85b3efa94c421d4896d43a87
 /***/ "(rsc)/./node_modules/next-auth/core/errors.js":
 /*!***********************************************!*\
   !*** ./node_modules/next-auth/core/errors.js ***!
@@ -91,6 +94,7 @@ eval("\n\nvar _interopRequireDefault = __webpack_require__(/*! @babel/runtime/he
 
 /***/ }),
 
+<<<<<<< HEAD
 /***/ "(rsc)/./node_modules/next-auth/react/index.js":
 /*!***********************************************!*\
   !*** ./node_modules/next-auth/react/index.js ***!
@@ -108,6 +112,16 @@ eval("\n\nvar _interopRequireDefault = __webpack_require__(/*! @babel/runtime/he
 /***/ ((__unused_webpack_module, exports) => {
 
 eval("\n\nObject.defineProperty(exports, \"__esModule\", ({\n  value: true\n}));//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiKHJzYykvLi9ub2RlX21vZHVsZXMvbmV4dC1hdXRoL3JlYWN0L3R5cGVzLmpzIiwibWFwcGluZ3MiOiJBQUFhOztBQUViLDhDQUE2QztBQUM3QztBQUNBLENBQUMsRUFBQyIsInNvdXJjZXMiOlsid2VicGFjazovL2hlYWx0aHN5bmMvLi9ub2RlX21vZHVsZXMvbmV4dC1hdXRoL3JlYWN0L3R5cGVzLmpzPzZhN2IiXSwic291cmNlc0NvbnRlbnQiOlsiXCJ1c2Ugc3RyaWN0XCI7XG5cbk9iamVjdC5kZWZpbmVQcm9wZXJ0eShleHBvcnRzLCBcIl9fZXNNb2R1bGVcIiwge1xuICB2YWx1ZTogdHJ1ZVxufSk7Il0sIm5hbWVzIjpbXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///(rsc)/./node_modules/next-auth/react/types.js\n");
+=======
+/***/ "(rsc)/./node_modules/next-auth/utils/detect-origin.js":
+/*!*******************************************************!*\
+  !*** ./node_modules/next-auth/utils/detect-origin.js ***!
+  \*******************************************************/
+/***/ ((__unused_webpack_module, exports) => {
+
+"use strict";
+eval("\n\nObject.defineProperty(exports, \"__esModule\", ({\n  value: true\n}));\nexports.detectOrigin = detectOrigin;\n\nfunction detectOrigin(forwardedHost, protocol) {\n  var _process$env$VERCEL;\n\n  if ((_process$env$VERCEL = process.env.VERCEL) !== null && _process$env$VERCEL !== void 0 ? _process$env$VERCEL : process.env.AUTH_TRUST_HOST) return `${protocol === \"http\" ? \"http\" : \"https\"}://${forwardedHost}`;\n  return process.env.NEXTAUTH_URL;\n}//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiKHJzYykvLi9ub2RlX21vZHVsZXMvbmV4dC1hdXRoL3V0aWxzL2RldGVjdC1vcmlnaW4uanMiLCJtYXBwaW5ncyI6IkFBQWE7O0FBRWIsOENBQTZDO0FBQzdDO0FBQ0EsQ0FBQyxFQUFDO0FBQ0Ysb0JBQW9COztBQUVwQjtBQUNBOztBQUVBLDJKQUEySix1Q0FBdUMsS0FBSyxjQUFjO0FBQ3JOO0FBQ0EiLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly9oZWFsdGhzeW5jLy4vbm9kZV9tb2R1bGVzL25leHQtYXV0aC91dGlscy9kZXRlY3Qtb3JpZ2luLmpzPzJjMTkiXSwic291cmNlc0NvbnRlbnQiOlsiXCJ1c2Ugc3RyaWN0XCI7XG5cbk9iamVjdC5kZWZpbmVQcm9wZXJ0eShleHBvcnRzLCBcIl9fZXNNb2R1bGVcIiwge1xuICB2YWx1ZTogdHJ1ZVxufSk7XG5leHBvcnRzLmRldGVjdE9yaWdpbiA9IGRldGVjdE9yaWdpbjtcblxuZnVuY3Rpb24gZGV0ZWN0T3JpZ2luKGZvcndhcmRlZEhvc3QsIHByb3RvY29sKSB7XG4gIHZhciBfcHJvY2VzcyRlbnYkVkVSQ0VMO1xuXG4gIGlmICgoX3Byb2Nlc3MkZW52JFZFUkNFTCA9IHByb2Nlc3MuZW52LlZFUkNFTCkgIT09IG51bGwgJiYgX3Byb2Nlc3MkZW52JFZFUkNFTCAhPT0gdm9pZCAwID8gX3Byb2Nlc3MkZW52JFZFUkNFTCA6IHByb2Nlc3MuZW52LkFVVEhfVFJVU1RfSE9TVCkgcmV0dXJuIGAke3Byb3RvY29sID09PSBcImh0dHBcIiA/IFwiaHR0cFwiIDogXCJodHRwc1wifTovLyR7Zm9yd2FyZGVkSG9zdH1gO1xuICByZXR1cm4gcHJvY2Vzcy5lbnYuTkVYVEFVVEhfVVJMO1xufSJdLCJuYW1lcyI6W10sInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///(rsc)/./node_modules/next-auth/utils/detect-origin.js\n");
+>>>>>>> f786494a0b42ce4b85b3efa94c421d4896d43a87
 
 /***/ }),
 

@@ -2,10 +2,46 @@
 import Link from "next/link"
 import Image from 'next/image';
 import CustomButton from '@/components/CustomButton';
-import {signIn} from 'next-auth/react'
+import {signIn, useSession} from 'next-auth/react'
 import { Navbar2 } from "@/components";
+import { useRouter } from "next/navigation";
+import React, {useEffect, useState} from "react";
 
 export default function Form(){
+    const router = useRouter();
+    const [error, setError] = useState("");
+    // const session = useSession();
+    const { data: session, status: sessionStatus } = useSession();
+
+    useEffect(() => {
+        if (sessionStatus === "authenticated") {
+        router.replace("/dashboard");
+        }
+    }, [sessionStatus, router]);
+
+    const handleSubmit = async (e: any) => {
+        e.preventDefault();
+        const email = e.target[0].value;
+        const password = e.target[1].value;
+
+        const res = await signIn("credentials", {
+        redirect: false,
+        email,
+        password,
+        });
+
+        if (res?.error) {
+        setError("Invalid email or password");
+        if (res?.url) router.replace("/dashboard");
+        } else {
+        setError("");
+        }
+    };
+
+    if (sessionStatus === "loading") {
+        return <h1>Loading...</h1>;
+    }
+
     return(
         <>
         <Navbar2 />
@@ -24,7 +60,7 @@ export default function Form(){
                     />
                     <div className="py-9 px-10"><h1 className="text-3xl font-bold text-center">Iniciar Sesión</h1><br />
                         <div className="flex flex-col w-full pl-4">
-                            <form className="flex flex-col items-center w-full">                                 
+                            <form className="flex flex-col items-center w-full" onSubmit={handleSubmit}>                                 
                                 <input type="email" className="bg-white rounded-lg outline-none text-base h-12 pl-2 w-3/4" placeholder="Correo"/>
                                 <br />
                                 <input type="password" className="bg-white rounded-lg outline-none text-base h-12 pl-2 w-3/4" placeholder="Contraseña"/>

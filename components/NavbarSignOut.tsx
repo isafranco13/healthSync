@@ -1,3 +1,4 @@
+"use client"
 import Link from 'next/link';
 import Image from 'next/image';
 import { useSession, signOut } from 'next-auth/react'; // Import signOut
@@ -5,6 +6,7 @@ import { useSession, signOut } from 'next-auth/react'; // Import signOut
 import CustomButton from './CustomButton';
 
 const NavbarSignOut = () => {
+    const { data: session }: any = useSession();
     // Función modificada para cerrar sesión y redirigir a la página principal
     const handleSignOut = () => {
         signOut({ redirect: true, callbackUrl: '/' });
@@ -23,8 +25,12 @@ const NavbarSignOut = () => {
                     /> &nbsp;&nbsp;&nbsp; <strong>HealthSync</strong>
                 </Link>
 
-                <div className="ml-auto flex space-x-5">
-                    <button onClick={handleSignOut} className="text-white rounded-full bg-pink-400 min-w-[150px] min-h-[48px] font-semibold">
+                <div className="ml-auto flex space-x-5 items-center">
+                    <div className='text-black text-center justify-center'>
+                    {session && session.user && session.user.name}
+                    </div>
+                    <button onClick={() => {signOut();}} 
+                        className="text-white rounded-full bg-pink-400 min-w-[150px] min-h-[48px] font-semibold">
                         Cerrar Sesión
                     </button>
                 </div>
