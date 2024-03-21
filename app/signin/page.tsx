@@ -48,41 +48,41 @@ export default function Form(){
 
         <main className="flex flex-col justify-center items-center w-full flex-1">
             <br /><br /><br /><br />
-            <div className="flex w-full max-w-3xl "> {/*div principal */}
+            <div className="flex max-w-3xl yellowContainer"> {/*div principal */}
                 {/*Sección de iniciar sesión*/}
-                <div className="w-full px-12  bg-[#FFEBA9] rounded-2xl "> 
+                <div className="logoContainer"> 
                     <Image
                         src="/atomo.png"
                         alt="atomo"
                         width={80}
                         height={48}
-                        className="object-contain mx-auto pt-10" 
+                        className="object-contain mx-auto logoSignIn" 
                     />
-                    <div className="py-9 px-10"><h1 className="text-3xl font-bold text-center">Iniciar Sesión</h1><br />
+                    <div className="divYellowContainer"><h1 className="text-3xl font-bold text-center titleSignIn">Iniciar Sesión</h1><br />
                         <div className="flex flex-col w-full pl-4">
                             <form className="flex flex-col items-center w-full" onSubmit={handleSubmit}>                                 
-                                <input type="email" className="bg-white rounded-lg outline-none text-base h-12 pl-2 w-3/4" placeholder="Correo"/>
+                                <input type="email" className="bg-white rounded-lg outline-none text-base h-12 pl-2 w-3/4 input" placeholder="Correo"/>
                                 <br />
-                                <input type="password" className="bg-white rounded-lg outline-none text-base h-12 pl-2 w-3/4" placeholder="Contraseña"/>
+                                <input type="password" className="bg-white rounded-lg outline-none text-base h-12 pl-2 w-3/4 input" placeholder="Contraseña"/>
                             
                                 <CustomButton
                                     btnType="submit"
                                     title="Iniciar Sesión"
-                                    containerStyles="text-white rounded-full bg-pink-400 font-medium mt-10"
+                                    containerStyles="text-white rounded-full bg-pink-400 font-medium mt-10 textButton"
                                 />
                             </form><br />
                             <div className="flex justify-between">
-                                <p className="text-black text-[17px] font-medium">¿No tienes cuenta? <Link href="/signup" className="text-[#E55E7F]">Regístrate</Link></p>
-                                <p className="text-black text-[17px] font-medium"><Link href="" className="text-[#E55E7F]">¿Olvidaste tu contraseña?</Link></p>
+                                <p className="text-black text-[17px] font-medium prSignIn">¿No tienes cuenta? <Link href="/signup" className="text-[#E55E7F]">Regístrate</Link></p>
+                                <p className="text-black text-[17px] font-medium prSignIn"><Link href="" className="text-[#E55E7F]">¿Olvidaste tu contraseña?</Link></p>
                             </div>                            
                         </div>
                     </div>
                         <div className="flex flex-nowrap items-center justify-center">
-                            <div className="border-2 min-w-[260px] border-[#FC83A1] inline-block mb-2"></div>
+                            <div className="border-2 border-[#FC83A1] inline-block mb-2 pinkLine"></div>
                             &nbsp;&nbsp;&nbsp;
                             <p className="text-black text-[15px] font-bold">O</p>
                             &nbsp;&nbsp;&nbsp;
-                            <div className="border-2 min-w-[260px] border-[#FC83A1] inline-block mb-2"></div>
+                            <div className="border-2 border-[#FC83A1] inline-block mb-2 pinkLine"></div>
                         </div>
                         <br />
                         <div className="flex justify-center my-2">&nbsp;
@@ -92,7 +92,7 @@ export default function Form(){
                         alt="mental"
                         width={40}
                         height={40}
-                        className="mr-2" 
+                        className="mr-2 googleLogo" 
                         />Continuar con Google</button> {/*'google', { callbackUrl: '/dashboard' }*/ }
                         </div> <br /> <br />
                 </div>
