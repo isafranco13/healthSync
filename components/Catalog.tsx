@@ -17,7 +17,7 @@ const CustomModalButton = ({ imageSrc, title, content, onClick }: CustomModalBut
     <button
       type="button"
       onClick={onClick}
-      className="mx-20 my-5 block rounded-md px-4 py-2 text-sm font-medium text-center"
+      className="mx-20 my-5 block rounded-md px-4 py-2 text-sm catalog text-center"
     >
       <img
         src={imageSrc}
@@ -52,14 +52,14 @@ export default function MyModal() {
     <>
     <div className='mt-12 padding-x padding-y max-width' id='discover'>
         <div className='home__text-container'>
-          <h1 className='text-4xl font-extrabold'>Catálogo de terapias</h1>
-          <p>Explora las terapias que mas te llamen la atención</p>
+          <h1 className='title'>Catálogo de terapias</h1>
+          <p className='green'>Explora las terapias que mas te llamen la atención</p>
         </div>
       </div>
 
       
           {/* Botones arriba */}
-      <div className="flex justify-center">
+      <div className="flex justify-center flex-col sm:flex-row green catalog">
         <CustomModalButton
           imageSrc="biomagnetismo.jpg"
           title="Biomagnetismo"
@@ -80,7 +80,7 @@ export default function MyModal() {
         />
       </div>
           {/* Botones abajo */}
-      <div className="flex justify-center">
+      <div className="flex justify-center flex-col sm:flex-row green">
         <CustomModalButton
           imageSrc="bacteriasArqueas.jpg"
           title="Vibración de Bacterias y Arqueas"
@@ -162,7 +162,7 @@ export default function MyModal() {
       <Link href="/signup">
         <CustomButton
           title="Registrarme"
-          containerStyles="text-white rounded-full bg-pink-400 min-w-[100px] font-medium mt-10"
+          containerStyles="text-white rounded-full bg-pink-400 font-medium textButton"
         />
       </Link> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     </div>
