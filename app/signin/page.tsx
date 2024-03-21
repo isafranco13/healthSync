@@ -87,7 +87,7 @@ export default function Form(){
                         <br />
                         <div className="flex justify-center my-2">&nbsp;
                         <button onClick={() => signIn('google', { callbackUrl: '/dashboard' })} className="flex items-center justify-center w-[299px] h-[59px] 
-                        border-2 border-[#FFFFFF] bg-[#FFFFFF]  rounded px-2 py-2 font-light text-center"> <Image
+                        border-2 border-[#FFFFFF] bg-[#FFFFFF] rounded px-2 py-2 font-light text-center"> <Image
                         src="/buscar.png"
                         alt="mental"
                         width={40}

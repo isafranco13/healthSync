@@ -43,3 +43,37 @@ const Navbar = () => {
 }
 
 export default Navbar
+
+/*
+
+HTML
+<button id="optionsButton">Opciones</button>
+<div id="optionsContainer" style="display: none;">
+    <a href="/signup">Crear Cuenta</a>
+    <a href="/signin">Iniciar Sesión</a>
+</div>
+
+JS
+const optionsButton = document.getElementById('optionsButton');
+const optionsContainer = document.getElementById('optionsContainer');
+
+optionsButton.addEventListener('click', function() {
+    optionsContainer.classList.toggle('show');
+});
+
+
+
+
+CSS
+#optionsContainer {
+    display: none;
+}
+
+@media (max-width: 414px) {
+    #optionsContainer {
+        display: block;
+    }
+}
+
+
+*/
