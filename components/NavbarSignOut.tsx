@@ -23,9 +23,7 @@ const NavbarSignOut = () => {
 
                 <div className="ml-auto flex space-x-5 items-center">
                     <div className='text-black text-center justify-center'>
-                    {session && session.user ? 
-                        (session.user.name ? session.user.name : session.user.email)
-                        : ""}
+                        {session && session.user && session.user.name}
                     </div>
                     <button onClick={() => {signOut();}} 
                         className="text-white rounded-full bg-pink-400 min-w-[150px] min-h-[48px] font-semibold">
