@@ -642,9 +642,6 @@ video {
 .max-w-3xl{
   max-width: 48rem;
 }
-.max-w-\[1440px\]{
-  max-width: 1440px;
-}
 .max-w-md{
   max-width: 28rem;
 }
@@ -1181,6 +1178,13 @@ html {
   }
 
 
+
+/*User page*/
+
+
+
+
+
 /* START: Footer styles */
 .footer{
   margin-top: 1.25rem;
@@ -1302,6 +1306,27 @@ html {
   }
 }
 /* END: Footer styles */
+
+
+
+
+/*ADMIN*/
+/*NavBar*/
+.navBar{
+  width: 15%;
+  height: auto;
+}
+
+.NavAdminDiv{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start; /* Añadido para alinear a la izquierda */
+}
+
+
+
+
 
 
 /*Celular*/
@@ -1505,10 +1530,14 @@ html {
     }
   
 
-  /*Active User*/
+/*User page*/
   .userName{
     font-size: 14px;
   }
+  .textButtonSignOut{
+    font-size: 13px;
+  }
+
 
   
   }
