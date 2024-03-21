@@ -7,10 +7,6 @@ import CustomButton from './CustomButton';
 
 const NavbarSignOut = () => {
     const { data: session }: any = useSession();
-    // Función modificada para cerrar sesión y redirigir a la página principal
-    const handleSignOut = () => {
-        signOut({ redirect: true, callbackUrl: '/' });
-    }
 
     return (
         <header className="w-full absolute z-10"> 
