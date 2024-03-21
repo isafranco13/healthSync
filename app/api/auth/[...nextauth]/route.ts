@@ -42,7 +42,7 @@ const handler = NextAuth({
             if (account && account.provider === 'google') {
                 const {name, email} = user;
                 try {
-                    const res = await fetch('http://localhost:3000/api/usuarios', {
+                    const res = await fetch('http://localhost:3000/api/usuarios', { //http://localhost:3000/api/usuarios
                         method: 'POST',
                         headers: {
                             'Content-Type': 'application/json',
