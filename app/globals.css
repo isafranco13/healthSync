@@ -9,7 +9,7 @@ html {
   background-color: #F5FFFB;
 }
 
-p{
+.green{
   color: #00C788; 
   font-size: 20px; 
 }
@@ -22,6 +22,19 @@ p{
 }
 
 /* START: General styles */
+.textButtonDiv{
+  @apply ml-auto flex space-x-5
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+} 
+
+.navBarName{
+  padding-left: 10px;
+}
+
 .max-width {
   @apply max-w-[1440px] mx-auto;
   
@@ -48,33 +61,74 @@ p{
 }
 /* END: General styles */
 
-/* START: Hero styles */
-.hero {
+/* START: Intro styles */
+.intro {
   @apply flex xl:flex-row flex-col gap-5 relative z-0 max-w-[1440px] mx-auto;
 }
 
-.hero__title {
+.title {
   @apply 2xl:text-[72px] sm:text-[64px] text-[50px] font-extrabold;
 }
 
-.hero__subtitle {
+.subtitle {
   @apply font-light mt-5;
-  /*  @apply text-[24px] font-light mt-5;*/
 }
 
-.hero__image-container {
+.catalog{
+  @apply font-semibold text-[18px];
+}
+
+.image-container {
   @apply xl:flex-[1.5] flex justify-end items-end w-full xl:h-screen;
 }
 
-.hero__image {
+.image {
   @apply relative xl:w-full w-[95%] xl:h-full h-[600px] z-0;
 }
 
-.hero__image-overlay {
+.image-overlay {
   @apply absolute xl:-top-24 xl:-right-1/2 -right-1/4 bg-hero-bg bg-repeat-round -z-10 w-full xl:h-screen h-[590px] overflow-hidden;
 }
 
-/* END: Hero styles */
+/*Sign In*/
+.logoContainer{
+  @apply w-full px-12 bg-[#FFEBA9] rounded-2xl     
+}
+
+.logoSignIn{
+  @apply pt-10 w-28 h-28 mx-auto;
+}
+
+.yellowContainer{
+  @apply w-full;
+}
+
+.divYellowContainer{
+  @apply py-9 px-10;
+}
+
+.pinkLine{
+  @apply min-w-[260px];
+}
+
+
+  /*Sign Up*/
+  .divSignUp{
+    @apply flex w-full max-w-4xl;
+  }
+
+  .main{
+    @apply flex-col;
+  }
+
+  .container{
+    @apply w-full px-12  bg-[#FFEBA9] rounded-2xl; 
+  }
+
+  .form{
+    font-size: 19px;
+  }
+
 
 /* START: Footer styles */
 .footer {
@@ -107,4 +161,125 @@ p{
 /* END: Footer styles */
 
 
+/*Celular*/
+@media (max-width: 520px){
+  /*Intro*/
+  .navBarName{
+    font-size: 14px;
+    padding-right: 20px;
+  
+  }
+  
+  .textButton{
+    font-size: 12.6px;
+  }
+  
+  .textButtonDiv{
+    @apply ml-auto flex min-w-[280px] 
+  }
+  
+  .logo {
+    padding-left: 2px;
+    width: 35px;
+    height: 35px;
+  } 
+  
+  .image-container {
+    @apply flex justify-end items-end w-full xl:h-screen;
+  }
+  
+  .image {
+    @apply relative xl:w-full w-[95%] xl:h-full h-[200px] z-0;
+  }
+  
+  .image-overlay {
+    @apply absolute xl:-top-24 xl:-right-1/2 -right-1/4 bg-hero-bg bg-repeat-round -z-10 w-full xl:h-screen h-[500px] overflow-hidden;
+  }
 
+  .catalog{
+    @apply font-semibold text-[16px];
+  }
+    
+  .green{
+    font-size: 15px; 
+  }
+
+  .intro {
+    @apply flex xl:flex-row flex-col relative z-0 max-w-[1440px] mx-auto;
+  }
+
+  .title {
+    @apply 2xl:text-[60px] sm:text-[50px] text-[35px] font-extrabold;
+  }
+
+
+  /*Sign In*/
+  .yellowContainer{
+    @apply w-96;
+  }
+  
+  .logoContainer{
+    @apply w-full px-10  bg-[#FFEBA9] rounded-2xl     
+  }
+
+  .logoSignIn{
+    @apply pt-10 w-24 h-24 mx-auto;
+  }
+
+  .titleSignIn{
+    @apply text-[25px];
+  }
+
+  .input{
+    @apply w-full ;
+  }
+
+  .prSignIn{
+    @apply text-[10px];
+  }
+
+  .divYellowContainer{
+    @apply py-9 px-2;
+  }
+
+  .pinkLine{
+    @apply min-w-[150px];
+  }
+
+  .googleLogo{
+    @apply w-6 h-6;
+  }
+
+
+  /*Sign Up*/
+    .divSignUp{
+      @apply block w-full max-w-96;
+    }
+
+    .main{
+      @apply flex-row;
+    }
+
+    .cuidaTuMente{
+      width: 400px;
+      height: 300px;
+    }
+
+    .container{
+      @apply w-full px-1 bg-[#FFEBA9] rounded-2xl; 
+    }
+
+    .form{
+      font-size: 15px;
+    }
+  
+
+  /*Active User*/
+  .userName{
+    font-size: 14px;
+  }
+
+  
+  }
+  
+  

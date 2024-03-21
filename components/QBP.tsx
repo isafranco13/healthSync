@@ -14,13 +14,13 @@ const Intro = () => {
   };
 
   return (
-    <div className="hero">
+    <div className="intro">
       <div className="flex-1 padding-x">
         <h1 className="text-4xl font-extrabold">
           ¿Quién soy?
         </h1>
 
-        <p className="hero__subtitle text-justify	">
+        <p className="subtitle text-justify	green">
 
         ¡Hola! Mi nombre es María Cristina Franco Terrazas, soy Q.B.P y practicante de terapias alternativas. 
         
@@ -34,12 +34,12 @@ const Intro = () => {
         </p>
       </div>
 
-      <div className="hero__image-container">
-        <div className="hero__image">
+      <div className="image-container">
+        <div className="image">
           <Image src="/therapist.png" alt="hero" fill className="object-contain" />
         </div>
 
-        <div className="hero__image-overlay" />
+        <div className="image-overlay" />
       </div>
     </div>
   );

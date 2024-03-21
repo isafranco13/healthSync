@@ -14,13 +14,14 @@ const Intro = () => {
   };
 
   return (
-    <div className="hero">
+    
+    <div className="intro">
       <div className="flex-1 pt-36 padding-x">
-        <h1 className="hero__title">
+        <h1 className="title">
           Terapia Alternativa
         </h1>
 
-        <p className="hero__subtitle text-justify	">
+        <p className="subtitle text-justify	green">
         Son técnicas basadas en la aplicación de la energía con el objetivo de restaurar el equilibrio y la armonía física, mental, 
         emocional y espiritual de la persona.
         </p>
@@ -28,16 +29,16 @@ const Intro = () => {
         <br />          
         <CustomButton
           title="Explorar terapias"
-          containerStyles="text-white rounded-full bg-pink-400 min-w-[100px] font-medium mt-10"
+          containerStyles="text-white rounded-full bg-pink-400 font-medium textButton"
           handleClick={handleScroll}
         />
       </div>
-      <div className="hero__image-container">
-        <div className="hero__image">
+      <div className="image-container">
+        <div className="image">
           <Image src="/hero.gif" alt="hero" fill className="object-contain" />
         </div>
 
-        <div className="hero__image-overlay" />
+        <div className="image-overlay" />
       </div>
     </div>
   );

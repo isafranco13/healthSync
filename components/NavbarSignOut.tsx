@@ -17,16 +17,16 @@ const NavbarSignOut = () => {
                         alt="atomo"
                         width={50}
                         height={18}
-                        className="object-contain" 
-                    /> &nbsp;&nbsp;&nbsp; <strong>HealthSync</strong>
+                        className="object-contain logo" 
+                    /> <p className='navBarName'><strong>HealthSync</strong></p>
                 </Link>
 
                 <div className="ml-auto flex space-x-5 items-center">
-                    <div className='text-black text-center justify-center'>
-                        {session && session.user && session.user.name}
+                    <div className='text-black text-center justify-center userName'>
+                    {session && session.user && session.user.name}
                     </div>
                     <button onClick={() => {signOut();}} 
-                        className="text-white rounded-full bg-pink-400 min-w-[150px] min-h-[48px] font-semibold">
+                        className="text-white rounded-full bg-pink-400 font-semibold textButton">
                         Cerrar Sesión
                     </button>
                 </div>
