@@ -5,7 +5,7 @@ import { redirect } from "next/navigation";
 const Dashboard = async () => {
     const session = await getServerSession();
     if (!session) {
-      redirect("/");
+      redirect("/signin");
     }
 
     return (

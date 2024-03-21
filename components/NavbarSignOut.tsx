@@ -7,10 +7,6 @@ import CustomButton from './CustomButton';
 
 const NavbarSignOut = () => {
     const { data: session }: any = useSession();
-    // Función modificada para cerrar sesión y redirigir a la página principal
-    const handleSignOut = () => {
-        signOut({ redirect: true, callbackUrl: '/' });
-    }
 
     return (
         <header className="w-full absolute z-10"> 
@@ -27,7 +23,9 @@ const NavbarSignOut = () => {
 
                 <div className="ml-auto flex space-x-5 items-center">
                     <div className='text-black text-center justify-center'>
-                    {session && session.user && session.user.name}
+                    {session && session.user ? 
+                        (session.user.name ? session.user.name : session.user.email)
+                        : ""}
                     </div>
                     <button onClick={() => {signOut();}} 
                         className="text-white rounded-full bg-pink-400 min-w-[150px] min-h-[48px] font-semibold">

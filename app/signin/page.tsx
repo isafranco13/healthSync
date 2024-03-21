@@ -24,10 +24,10 @@ export default function Form(){
         const email = e.target[0].value;
         const password = e.target[1].value;
 
-        const res = await signIn("credentials", {
-        redirect: false,
-        email,
-        password,
+        const res = await signIn('credentials', {
+            email,
+            password,
+            redirect: false,
         });
 
         if (res?.error) {

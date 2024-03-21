@@ -471,6 +471,17 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", ({\n  value: true\n}));
 
 /***/ }),
 
+/***/ "(rsc)/./node_modules/next-auth/providers/credentials.js":
+/*!*********************************************************!*\
+  !*** ./node_modules/next-auth/providers/credentials.js ***!
+  \*********************************************************/
+/***/ ((__unused_webpack_module, exports) => {
+
+"use strict";
+eval("\n\nObject.defineProperty(exports, \"__esModule\", ({\n  value: true\n}));\nexports[\"default\"] = Credentials;\n\nfunction Credentials(options) {\n  return {\n    id: \"credentials\",\n    name: \"Credentials\",\n    type: \"credentials\",\n    credentials: {},\n    authorize: () => null,\n    options\n  };\n}//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiKHJzYykvLi9ub2RlX21vZHVsZXMvbmV4dC1hdXRoL3Byb3ZpZGVycy9jcmVkZW50aWFscy5qcyIsIm1hcHBpbmdzIjoiQUFBYTs7QUFFYiw4Q0FBNkM7QUFDN0M7QUFDQSxDQUFDLEVBQUM7QUFDRixrQkFBZTs7QUFFZjtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0EsbUJBQW1CO0FBQ25CO0FBQ0E7QUFDQTtBQUNBIiwic291cmNlcyI6WyJ3ZWJwYWNrOi8vaGVhbHRoc3luYy8uL25vZGVfbW9kdWxlcy9uZXh0LWF1dGgvcHJvdmlkZXJzL2NyZWRlbnRpYWxzLmpzPzFhNjAiXSwic291cmNlc0NvbnRlbnQiOlsiXCJ1c2Ugc3RyaWN0XCI7XG5cbk9iamVjdC5kZWZpbmVQcm9wZXJ0eShleHBvcnRzLCBcIl9fZXNNb2R1bGVcIiwge1xuICB2YWx1ZTogdHJ1ZVxufSk7XG5leHBvcnRzLmRlZmF1bHQgPSBDcmVkZW50aWFscztcblxuZnVuY3Rpb24gQ3JlZGVudGlhbHMob3B0aW9ucykge1xuICByZXR1cm4ge1xuICAgIGlkOiBcImNyZWRlbnRpYWxzXCIsXG4gICAgbmFtZTogXCJDcmVkZW50aWFsc1wiLFxuICAgIHR5cGU6IFwiY3JlZGVudGlhbHNcIixcbiAgICBjcmVkZW50aWFsczoge30sXG4gICAgYXV0aG9yaXplOiAoKSA9PiBudWxsLFxuICAgIG9wdGlvbnNcbiAgfTtcbn0iXSwibmFtZXMiOltdLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///(rsc)/./node_modules/next-auth/providers/credentials.js\n");
+
+/***/ }),
+
 /***/ "(rsc)/./node_modules/next-auth/providers/google.js":
 /*!****************************************************!*\
   !*** ./node_modules/next-auth/providers/google.js ***!
