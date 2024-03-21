@@ -10,7 +10,7 @@ const NavbarSignOut = () => {
 
     return (
         <header className="w-full absolute z-10"> 
-            <nav className="max-w-[1440px] mx-auto flex justify-between items-center sm:px-16 px-6 py-4">
+            <nav className="mx-auto flex justify-between items-center sm:px-16 px-6 py-4">
                 <Link href="/dashboard" className="flex justify-center items-center">
                     <Image
                         src="/atomo.svg"
@@ -26,7 +26,7 @@ const NavbarSignOut = () => {
                     {session && session.user && session.user.name}
                     </div>
                     <button onClick={() => {signOut();}} 
-                        className="text-white rounded-full bg-pink-400 font-semibold textButton">
+                        className="text-white rounded-full bg-pink-400 font-semibold textButtonSignOut">
                         Cerrar Sesión
                     </button>
                 </div>

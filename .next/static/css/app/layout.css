@@ -636,14 +636,8 @@ video {
 .min-w-\[100px\]{
   min-width: 100px;
 }
-.min-w-\[135px\]{
-  min-width: 135px;
-}
 .max-w-3xl{
   max-width: 48rem;
-}
-.max-w-\[1440px\]{
-  max-width: 1440px;
 }
 .max-w-md{
   max-width: 28rem;
@@ -772,10 +766,6 @@ video {
 }
 .p-6{
   padding: 1.5rem;
-}
-.px-12{
-  padding-left: 3rem;
-  padding-right: 3rem;
 }
 .px-2{
   padding-left: 0.5rem;
@@ -1181,6 +1171,19 @@ html {
   }
 
 
+
+/*User page*/
+.textButtonSignOut{
+  font-size: 16px;
+  width: 150px; /* Ajusta el ancho del botón */
+  height: 47px; /* Ajusta la altura del botón */
+
+}
+
+
+
+
+
 /* START: Footer styles */
 .footer{
   margin-top: 1.25rem;
@@ -1304,29 +1307,273 @@ html {
 /* END: Footer styles */
 
 
+
+
+/*ADMIN*/
+/*NavBar*/
+.navBar{
+  width: 15%;
+  height: auto;
+}
+
+.NavAdminDiv{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start; /* Añadido para alinear a la izquierda */
+}
+
+
+
+
+
+
 /*Celular*/
-@media (max-width: 520px){
+
+@media (max-width: 380px){
   /*Intro*/
   .navBarName{
-    font-size: 14px;
+    font-size: 10px;
     padding-right: 20px;
   
   }
   
   .textButton{
-    font-size: 12.6px;
+    font-size: 10px;
   }
   
   .textButtonDiv{
     margin-left: auto;
     display: flex;
-    min-width: 280px;
+    min-width: 244px;
   }
   
   .logo {
-    padding-left: 2px;
-    width: 35px;
-    height: 35px;
+    padding-left: 0px;
+    width: 25px;
+    height: 25px;
+  } 
+  
+  .image-container{
+    display: flex;
+    width: 100%;
+    align-items: flex-end;
+    justify-content: flex-end;
+  } 
+  
+  @media (min-width: 1280px){
+
+    .image-container{
+      height: 100vh;
+    }
+  }
+  
+  .image{
+    position: relative;
+    z-index: 0;
+    height: 200px;
+    width: 95%;
+  }
+  
+  @media (min-width: 1280px){
+
+    .image{
+      height: 100%;
+      width: 100%;
+    }
+  }
+  
+  .image-overlay{
+    position: absolute;
+    right: -25%;
+    z-index: -10;
+    height: 500px;
+    width: 100%;
+    overflow: hidden;
+    background-image: url('/hero-bg.png');
+    background-repeat: round;
+  }
+  
+  @media (min-width: 1280px){
+
+    .image-overlay{
+      top: -6rem;
+      right: -50%;
+      height: 100vh;
+    }
+  }
+
+  .catalog{
+    font-size: 16px;
+    font-weight: 600;
+  }
+    
+  .green{
+    font-size: 15px; 
+  }
+
+  .intro{
+    position: relative;
+    z-index: 0;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    max-width: 1440px;
+    flex-direction: column;
+  }
+
+  @media (min-width: 1280px){
+
+    .intro{
+      flex-direction: row;
+    }
+  }
+
+  .title{
+    font-size: 35px;
+    font-weight: 800;
+  }
+
+  @media (min-width: 640px){
+
+    .title{
+      font-size: 50px;
+    }
+  }
+
+  @media (min-width: 1536px){
+
+    .title{
+      font-size: 60px;
+    }
+  }
+
+
+  /*Sign In*/
+  .yellowContainer{
+    width: 20rem;
+  }
+  
+  .logoContainer{
+    width: 100%;
+    border-radius: 1rem;
+    --tw-bg-opacity: 1;
+    background-color: rgb(255 235 169 / var(--tw-bg-opacity));
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+
+  .logoSignIn{
+    margin-left: auto;
+    margin-right: auto;
+    height: 6rem;
+    width: 6rem;
+    padding-top: 2.5rem;
+  }
+
+  .titleSignIn{
+    font-size: 25px;
+  }
+
+  .input{
+    width: 100%;
+  }
+
+  .prSignIn{
+    font-size: 10px;
+  }
+
+  .divYellowContainer{
+    padding-top: 2.25rem;
+    padding-bottom: 2.25rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+
+  .pinkLine{
+    min-width: 120px;
+  }
+
+  .googleLogo{
+    height: 1.5rem;
+    width: 1.5rem;
+  }
+
+
+  /*Sign Up*/
+    .divSignUp{
+    display: block;
+    width: 100%;
+    max-width: 20rem;
+  }
+
+    .main{
+    flex-direction: row;
+  }
+
+    .cuidaTuMenteTitle{
+      font-size: 28px;
+    }
+
+    .cuidaTuMente{
+      width: 400px;
+      height: 300px;
+    }
+
+    .container{
+    width: 100%;
+    border-radius: 1rem;
+    --tw-bg-opacity: 1;
+    background-color: rgb(255 235 169 / var(--tw-bg-opacity));
+    padding-left: 0.25rem;
+    padding-right: 0.25rem;
+  }
+
+    .form{
+      font-size: 15px;
+    }
+  
+    .prSignUp{
+    font-size: 12px;
+  }
+  
+
+/*User page*/
+  .userName{
+    font-size: 13px;
+  }
+
+  .textButtonSignOut{
+    font-size: 13px;
+    width: 150px; /* Ajusta el ancho del botón */
+    height: 47px; /* Ajusta la altura del botón */
+  
+  }
+}
+
+
+@media (min-width: 380px) and (max-width: 520px){
+  /*Intro*/
+  .navBarName{
+    font-size: 12px;
+    padding-right: 20px;
+  
+  }
+  
+  .textButton{
+    font-size: 12px;
+  }
+  
+  .textButtonDiv{
+    margin-left: auto;
+    display: flex;
+    min-width: 270px;
+  }
+  
+  .logo {
+    padding-left: 0px;
+    width: 30px;
+    height: 30px;
   } 
   
   .image-container{
@@ -1455,7 +1702,7 @@ html {
   }
 
   .prSignIn{
-    font-size: 10px;
+    font-size: 12px;
   }
 
   .divYellowContainer{
@@ -1466,7 +1713,7 @@ html {
   }
 
   .pinkLine{
-    min-width: 150px;
+    min-width: 120px;
   }
 
   .googleLogo{
@@ -1479,12 +1726,16 @@ html {
     .divSignUp{
     display: block;
     width: 100%;
-    max-width: 24rem;
+    max-width: 20rem;
   }
 
     .main{
     flex-direction: row;
   }
+
+    .cuidaTuMenteTitle{
+      font-size: 28px;
+    }
 
     .cuidaTuMente{
       width: 400px;
@@ -1504,40 +1755,66 @@ html {
       font-size: 15px;
     }
   
-
-  /*Active User*/
-  .userName{
-    font-size: 14px;
+    .prSignUp{
+    font-size: 12px;
   }
+  
+
+/*User page*/
+  .userName{
+    font-size: 13px;
+  }
+
+  .textButtonSignOut{
+    font-size: 13px;
+    width: 150px; /* Ajusta el ancho del botón */
+    height: 47px; /* Ajusta la altura del botón */
+  
+  }
+  
 
   
   }
+
+
 .hover\:bg-blue-200:hover{
   --tw-bg-opacity: 1;
   background-color: rgb(191 219 254 / var(--tw-bg-opacity));
 }
+
+
 .focus\:outline-none:focus{
   outline: 2px solid transparent;
   outline-offset: 2px;
 }
+
+
 .focus-visible\:ring-2:focus-visible{
   --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
   --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);
   box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
 }
+
+
 .focus-visible\:ring-blue-500:focus-visible{
   --tw-ring-opacity: 1;
   --tw-ring-color: rgb(59 130 246 / var(--tw-ring-opacity));
 }
+
+
 .focus-visible\:ring-offset-2:focus-visible{
   --tw-ring-offset-width: 2px;
 }
+
+
 @media not all and (min-width: 768px){
 
   .max-md\:flex-col{
     flex-direction: column;
   }
 }
+
+
 @media (min-width: 640px){
 
   .sm\:flex-row{

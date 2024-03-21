@@ -1,4 +1,5 @@
 "use client"
+import NavbarAdmin from '@/components/NavBarAdmin';
 import React, { useState, useEffect } from 'react';
 
 export default function Home() {
@@ -11,7 +12,10 @@ export default function Home() {
     }, []);
 
     return (
+        
         <main className="overflow-hidden">
+            <NavbarAdmin />
+
             <div>
                 <h1>Cantidad de Usuarios: {usuarios.length}</h1><br />
                 <table className='text-center'>

@@ -130,6 +130,19 @@ html {
   }
 
 
+
+/*User page*/
+.textButtonSignOut{
+  font-size: 16px;
+  width: 150px; /* Ajusta el ancho del botón */
+  height: 47px; /* Ajusta la altura del botón */
+
+}
+
+
+
+
+
 /* START: Footer styles */
 .footer {
   @apply flex flex-col text-black-100  mt-5 border-t border-gray-100;
@@ -161,27 +174,183 @@ html {
 /* END: Footer styles */
 
 
+
+
+/*ADMIN*/
+/*NavBar*/
+.navBar{
+  width: 15%;
+  height: auto;
+}
+
+.NavAdminDiv{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start; /* Añadido para alinear a la izquierda */
+}
+
+
+
+
+
+
 /*Celular*/
-@media (max-width: 520px){
+
+@media (max-width: 380px){
   /*Intro*/
   .navBarName{
-    font-size: 14px;
+    font-size: 10px;
     padding-right: 20px;
   
   }
   
   .textButton{
-    font-size: 12.6px;
+    font-size: 10px;
   }
   
   .textButtonDiv{
-    @apply ml-auto flex min-w-[280px] 
+    @apply ml-auto flex min-w-[244px] 
   }
   
   .logo {
-    padding-left: 2px;
-    width: 35px;
-    height: 35px;
+    padding-left: 0px;
+    width: 25px;
+    height: 25px;
+  } 
+  
+  .image-container {
+    @apply flex justify-end items-end w-full xl:h-screen;
+  }
+  
+  .image {
+    @apply relative xl:w-full w-[95%] xl:h-full h-[200px] z-0;
+  }
+  
+  .image-overlay {
+    @apply absolute xl:-top-24 xl:-right-1/2 -right-1/4 bg-hero-bg bg-repeat-round -z-10 w-full xl:h-screen h-[500px] overflow-hidden;
+  }
+
+  .catalog{
+    @apply font-semibold text-[16px];
+  }
+    
+  .green{
+    font-size: 15px; 
+  }
+
+  .intro {
+    @apply flex xl:flex-row flex-col relative z-0 max-w-[1440px] mx-auto;
+  }
+
+  .title {
+    @apply 2xl:text-[60px] sm:text-[50px] text-[35px] font-extrabold;
+  }
+
+
+  /*Sign In*/
+  .yellowContainer{
+    @apply w-80;
+  }
+  
+  .logoContainer{
+    @apply w-full px-10  bg-[#FFEBA9] rounded-2xl     
+  }
+
+  .logoSignIn{
+    @apply pt-10 w-24 h-24 mx-auto;
+  }
+
+  .titleSignIn{
+    @apply text-[25px];
+  }
+
+  .input{
+    @apply w-full ;
+  }
+
+  .prSignIn{
+    @apply text-[10px];
+  }
+
+  .divYellowContainer{
+    @apply py-9 px-2;
+  }
+
+  .pinkLine{
+    @apply min-w-[120px];
+  }
+
+  .googleLogo{
+    @apply w-6 h-6;
+  }
+
+
+  /*Sign Up*/
+    .divSignUp{
+      @apply block w-full max-w-80;
+    }
+
+    .main{
+      @apply flex-row;
+    }
+
+    .cuidaTuMenteTitle{
+      font-size: 28px;
+    }
+
+    .cuidaTuMente{
+      width: 400px;
+      height: 300px;
+    }
+
+    .container{
+      @apply w-full px-1 bg-[#FFEBA9] rounded-2xl; 
+    }
+
+    .form{
+      font-size: 15px;
+    }
+  
+    .prSignUp{
+      @apply text-[12px];
+    }
+  
+
+/*User page*/
+  .userName{
+    font-size: 13px;
+  }
+
+  .textButtonSignOut{
+    font-size: 13px;
+    width: 150px; /* Ajusta el ancho del botón */
+    height: 47px; /* Ajusta la altura del botón */
+  
+  }
+}
+
+
+@media (min-width: 380px) and (max-width: 520px){
+  /*Intro*/
+  .navBarName{
+    font-size: 12px;
+    padding-right: 20px;
+  
+  }
+  
+  .textButton{
+    font-size: 12px;
+  }
+  
+  .textButtonDiv{
+    @apply ml-auto flex min-w-[270px] 
+  }
+  
+  .logo {
+    padding-left: 0px;
+    width: 30px;
+    height: 30px;
   } 
   
   .image-container {
@@ -235,7 +404,7 @@ html {
   }
 
   .prSignIn{
-    @apply text-[10px];
+    @apply text-[12px];
   }
 
   .divYellowContainer{
@@ -243,7 +412,7 @@ html {
   }
 
   .pinkLine{
-    @apply min-w-[150px];
+    @apply min-w-[120px];
   }
 
   .googleLogo{
@@ -253,11 +422,15 @@ html {
 
   /*Sign Up*/
     .divSignUp{
-      @apply block w-full max-w-96;
+      @apply block w-full max-w-80;
     }
 
     .main{
       @apply flex-row;
+    }
+
+    .cuidaTuMenteTitle{
+      font-size: 28px;
     }
 
     .cuidaTuMente{
@@ -273,11 +446,23 @@ html {
       font-size: 15px;
     }
   
+    .prSignUp{
+      @apply text-[12px];
+    }
+  
 
-  /*Active User*/
+/*User page*/
   .userName{
-    font-size: 14px;
+    font-size: 13px;
   }
+
+  .textButtonSignOut{
+    font-size: 13px;
+    width: 150px; /* Ajusta el ancho del botón */
+    height: 47px; /* Ajusta la altura del botón */
+  
+  }
+  
 
   
   }
