@@ -2083,6 +2083,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 
 /***/ }),
 
+<<<<<<< HEAD
 /***/ "(rsc)/./node_modules/next/dist/api/navigation.js":
 /*!**************************************************!*\
   !*** ./node_modules/next/dist/api/navigation.js ***!
@@ -2105,6 +2106,8 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _ser
 
 /***/ }),
 
+=======
+>>>>>>> 61b7d27d0ef0e5712cba5b596c4acbfa754397e8
 /***/ "(rsc)/./node_modules/next/dist/build/output/log.js":
 /*!****************************************************!*\
   !*** ./node_modules/next/dist/build/output/log.js ***!
@@ -2391,6 +2394,7 @@ eval("\nvar __defProp = Object.defineProperty;\nvar __getOwnPropDesc = Object.ge
 
 /***/ }),
 
+<<<<<<< HEAD
 /***/ "(rsc)/./node_modules/next/dist/compiled/@edge-runtime/cookies/index.js":
 /*!************************************************************************!*\
   !*** ./node_modules/next/dist/compiled/@edge-runtime/cookies/index.js ***!
@@ -2402,6 +2406,8 @@ eval("\nvar __defProp = Object.defineProperty;\nvar __getOwnPropDesc = Object.ge
 
 /***/ }),
 
+=======
+>>>>>>> 61b7d27d0ef0e5712cba5b596c4acbfa754397e8
 /***/ "(rsc)/./node_modules/next/dist/compiled/@opentelemetry/api/index.js":
 /*!*********************************************************************!*\
   !*** ./node_modules/next/dist/compiled/@opentelemetry/api/index.js ***!
@@ -2443,6 +2449,7 @@ eval("\nObject.defineProperty(exports, \"__esModule\", ({ value: true }));\n/**\
 
 /***/ }),
 
+<<<<<<< HEAD
 /***/ "(app-metadata-route)/./node_modules/next/dist/compiled/ua-parser-js/ua-parser.js":
 /*!*******************************************************************!*\
   !*** ./node_modules/next/dist/compiled/ua-parser-js/ua-parser.js ***!
@@ -2453,6 +2460,8 @@ eval("var __WEBPACK_AMD_DEFINE_RESULT__;(()=>{var i={226:function(i,e){(function
 
 /***/ }),
 
+=======
+>>>>>>> 61b7d27d0ef0e5712cba5b596c4acbfa754397e8
 /***/ "(rsc)/./node_modules/next/dist/lib/constants.js":
 /*!*************************************************!*\
   !*** ./node_modules/next/dist/lib/constants.js ***!
@@ -2662,6 +2671,7 @@ eval("\nmodule.exports = __webpack_require__(/*! ../../module.compiled */ \"(ssr
 
 /***/ }),
 
+<<<<<<< HEAD
 /***/ "(rsc)/./node_modules/next/dist/server/future/route-modules/app-route/module.compiled.js":
 /*!*****************************************************************************************!*\
   !*** ./node_modules/next/dist/server/future/route-modules/app-route/module.compiled.js ***!
@@ -2673,6 +2683,8 @@ eval("\nif (false) {} else {\n    if (true) {\n        module.exports = __webpac
 
 /***/ }),
 
+=======
+>>>>>>> 61b7d27d0ef0e5712cba5b596c4acbfa754397e8
 /***/ "(rsc)/./node_modules/next/dist/server/lib/patch-fetch.js":
 /*!**********************************************************!*\
   !*** ./node_modules/next/dist/server/lib/patch-fetch.js ***!
@@ -2717,6 +2729,7 @@ eval("\nObject.defineProperty(exports, \"__esModule\", ({\n    value: true\n}));
 
 /***/ }),
 
+<<<<<<< HEAD
 /***/ "(app-metadata-route)/./node_modules/next/dist/server/web/error.js":
 /*!****************************************************!*\
   !*** ./node_modules/next/dist/server/web/error.js ***!
@@ -2871,6 +2884,8 @@ eval("\nObject.defineProperty(exports, \"__esModule\", ({\n    value: true\n}));
 
 /***/ }),
 
+=======
+>>>>>>> 61b7d27d0ef0e5712cba5b596c4acbfa754397e8
 /***/ "(rsc)/./node_modules/next/dist/shared/lib/escape-regexp.js":
 /*!************************************************************!*\
   !*** ./node_modules/next/dist/shared/lib/escape-regexp.js ***!
@@ -2882,6 +2897,7 @@ eval("// regexp is based on https://github.com/sindresorhus/escape-string-regexp
 
 /***/ }),
 
+<<<<<<< HEAD
 /***/ "(app-metadata-route)/./node_modules/next/dist/shared/lib/get-hostname.js":
 /*!***********************************************************!*\
   !*** ./node_modules/next/dist/shared/lib/get-hostname.js ***!
@@ -2893,6 +2909,8 @@ eval("\nObject.defineProperty(exports, \"__esModule\", ({\n    value: true\n}));
 
 /***/ }),
 
+=======
+>>>>>>> 61b7d27d0ef0e5712cba5b596c4acbfa754397e8
 /***/ "(rsc)/./node_modules/next/dist/shared/lib/get-img-props.js":
 /*!************************************************************!*\
   !*** ./node_modules/next/dist/shared/lib/get-img-props.js ***!
@@ -2915,6 +2933,7 @@ eval("// http://www.cse.yorku.ca/~oz/hash.html\n// More specifically, 32-bit has
 
 /***/ }),
 
+<<<<<<< HEAD
 /***/ "(app-metadata-route)/./node_modules/next/dist/shared/lib/i18n/detect-domain-locale.js":
 /*!************************************************************************!*\
   !*** ./node_modules/next/dist/shared/lib/i18n/detect-domain-locale.js ***!
@@ -2937,6 +2956,8 @@ eval("\nObject.defineProperty(exports, \"__esModule\", ({\n    value: true\n}));
 
 /***/ }),
 
+=======
+>>>>>>> 61b7d27d0ef0e5712cba5b596c4acbfa754397e8
 /***/ "(rsc)/./node_modules/next/dist/shared/lib/i18n/normalize-locale-path.js":
 /*!*************************************************************************!*\
   !*** ./node_modules/next/dist/shared/lib/i18n/normalize-locale-path.js ***!
@@ -3047,6 +3068,7 @@ eval("/**\n * For a given page path, this function ensures that there is no back
 
 /***/ }),
 
+<<<<<<< HEAD
 /***/ "(app-metadata-route)/./node_modules/next/dist/shared/lib/router/utils/add-locale.js":
 /*!**********************************************************************!*\
   !*** ./node_modules/next/dist/shared/lib/router/utils/add-locale.js ***!
@@ -3080,6 +3102,8 @@ eval("\nObject.defineProperty(exports, \"__esModule\", ({\n    value: true\n}));
 
 /***/ }),
 
+=======
+>>>>>>> 61b7d27d0ef0e5712cba5b596c4acbfa754397e8
 /***/ "(rsc)/./node_modules/next/dist/shared/lib/router/utils/app-paths.js":
 /*!*********************************************************************!*\
   !*** ./node_modules/next/dist/shared/lib/router/utils/app-paths.js ***!
@@ -3091,6 +3115,7 @@ eval("\nObject.defineProperty(exports, \"__esModule\", ({\n    value: true\n}));
 
 /***/ }),
 
+<<<<<<< HEAD
 /***/ "(app-metadata-route)/./node_modules/next/dist/shared/lib/router/utils/format-next-pathname-info.js":
 /*!*************************************************************************************!*\
   !*** ./node_modules/next/dist/shared/lib/router/utils/format-next-pathname-info.js ***!
@@ -3124,6 +3149,8 @@ eval("/**\n * Given a path this function will find the pathname, query and hash 
 
 /***/ }),
 
+=======
+>>>>>>> 61b7d27d0ef0e5712cba5b596c4acbfa754397e8
 /***/ "(rsc)/./node_modules/next/dist/shared/lib/router/utils/parse-relative-url.js":
 /*!******************************************************************************!*\
   !*** ./node_modules/next/dist/shared/lib/router/utils/parse-relative-url.js ***!
@@ -3146,6 +3173,7 @@ eval("\nObject.defineProperty(exports, \"__esModule\", ({\n    value: true\n}));
 
 /***/ }),
 
+<<<<<<< HEAD
 /***/ "(app-metadata-route)/./node_modules/next/dist/shared/lib/router/utils/path-has-prefix.js":
 /*!***************************************************************************!*\
   !*** ./node_modules/next/dist/shared/lib/router/utils/path-has-prefix.js ***!
@@ -3157,6 +3185,8 @@ eval("\nObject.defineProperty(exports, \"__esModule\", ({\n    value: true\n}));
 
 /***/ }),
 
+=======
+>>>>>>> 61b7d27d0ef0e5712cba5b596c4acbfa754397e8
 /***/ "(rsc)/./node_modules/next/dist/shared/lib/router/utils/path-match.js":
 /*!**********************************************************************!*\
   !*** ./node_modules/next/dist/shared/lib/router/utils/path-match.js ***!
@@ -3190,6 +3220,7 @@ eval("\nObject.defineProperty(exports, \"__esModule\", ({\n    value: true\n}));
 
 /***/ }),
 
+<<<<<<< HEAD
 /***/ "(app-metadata-route)/./node_modules/next/dist/shared/lib/router/utils/remove-path-prefix.js":
 /*!******************************************************************************!*\
   !*** ./node_modules/next/dist/shared/lib/router/utils/remove-path-prefix.js ***!
@@ -3212,6 +3243,8 @@ eval("/**\n * Removes the trailing slash for a given route or page path. Preserv
 
 /***/ }),
 
+=======
+>>>>>>> 61b7d27d0ef0e5712cba5b596c4acbfa754397e8
 /***/ "(rsc)/./node_modules/next/dist/shared/lib/router/utils/remove-trailing-slash.js":
 /*!*********************************************************************************!*\
   !*** ./node_modules/next/dist/shared/lib/router/utils/remove-trailing-slash.js ***!

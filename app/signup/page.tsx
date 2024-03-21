@@ -59,7 +59,7 @@ export default function Form(){
                     <div className="divSignUp"> {/*div principal */}
                         <div className="w-full px-50"> {/*Sección de imagen y frase py-36 px-12*/}
                         <br /><br /><br /><br />
-                            <h2 className="text-3xl text-[#FC83A1] font-bold" >Cuida tu mente 
+                            <h2 className="text-3xl text-[#FC83A1] font-bold cuidaTuMenteTitle" >Cuida tu mente 
                             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;transforma tu vida</h2>
                             <Image
                                 src="/mental.png"
@@ -95,25 +95,25 @@ export default function Form(){
                                 <br />
                             </div>
                             <div className="block ">
-                                <p className="text-black text-[17px] font-medium prSignIn">¿Ya tienes una cuenta? <Link href="/signin" className="text-[#E55E7F]">Inicia sesión</Link></p>
+                                <p className="text-black text-[17px] font-medium prSignUp">¿Ya tienes una cuenta? <Link href="/signin" className="text-[#E55E7F]">Inicia sesión</Link></p>
                             </div> <br />
                                 <div className="flex flex-wrap items-center justify-stretch">
-                                    <div className="border-2 min-w-[135px] border-[#FC83A1] inline-block mb-2"></div>
+                                    <div className="border-2 border-[#FC83A1] inline-block mb-2 pinkLine"></div>
                                     &nbsp;&nbsp;&nbsp;
                                     <p className="text-black text-[15px] font-bold">O</p>
                                     &nbsp;&nbsp;&nbsp;
-                                    <div className="border-2 min-w-[135px] border-[#FC83A1] inline-block mb-2"></div>
+                                    <div className="border-2 border-[#FC83A1] inline-block mb-2 pinkLine"></div>
                                 </div>
                                 <br />
                                 <div className="flex justify-center my-2">
                                 <button onClick={() => signIn('google', { callbackUrl: '/dashboard' })} className="flex items-center justify-center w-[310px] h-[59px] 
-                                border-2 border-[#FFFFFF] bg-[#FFFFFF]  rounded px-12 py-2 font-light text-center"> <Image
+                                border-2 border-[#FFFFFF] bg-[#FFFFFF] rounded px-15 py-2 font-light text-center"> <Image
                                 src="/buscar.png"
                                 alt="mental"
                                 width={40}
                                 height={40}
-                                className="googleLogo" 
-                                /> &nbsp;&nbsp; Continuar con Google</button> {/*'google', { callbackUrl: '/dashboard' }*/ }
+                                className="mr-2 googleLogo" 
+                                /> Continuar con Google</button> {/*'google', { callbackUrl: '/dashboard' }*/ }
                                 </div>
                             </form>    
                             </div>
