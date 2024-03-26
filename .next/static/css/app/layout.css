@@ -1463,7 +1463,9 @@ html {
   justify-content: flex-start; /* Añadido para alinear a la izquierda */
 }
 
-
+.text{
+  padding-left: 2%;
+}
 
 
 
