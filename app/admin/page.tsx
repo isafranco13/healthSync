@@ -15,30 +15,8 @@ export default function Home() {
         
         <main className="overflow-hidden">
             <NavbarAdmin />
+            
 
-            <div>
-                <h1>Cantidad de Usuarios: {usuarios.length}</h1><br />
-                <table className='text-center'>
-                    <thead>
-                        <tr>
-                            <th className='pr-10'>Nombre</th>
-                            <th className='pr-10'>Apellido</th>
-                            <th>Correo</th>
-                            {/* Agregar más columnas según la estructura de los usuarios */}
-                        </tr>
-                    </thead>
-                    <tbody>
-                        {usuarios.map(usuario => (
-                            <tr key={usuario._id}>
-                                <td className='pr-10'>{usuario.nombre}</td>
-                                <td className='pr-10'>{usuario.apellido}</td>
-                                <td>{usuario.correo}</td>
-                                {/* Agregar más celdas según la estructura de los usuarios */}
-                            </tr>
-                        ))}
-                    </tbody>
-                </table>
-            </div>
         </main>
     );
 }
