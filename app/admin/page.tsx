@@ -13,7 +13,7 @@ export default function Home() {
                     </div>
 
                     <div className='text'>
-                        <p>Tu texto aquí</p>
+                        <p className='tituloAdmin'><strong>Configuración de la aplicación</strong></p>
                     </div>
                 </div>
             </div>

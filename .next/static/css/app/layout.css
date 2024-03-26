@@ -1464,9 +1464,12 @@ html {
 }
 
 .text{
-  padding-left: 2%;
+  padding: 2%;
 }
-
+.tituloAdmin{
+  font-size: 30px;
+  font-weight: bold;
+}
 
 
 
