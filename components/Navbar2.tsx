@@ -1,3 +1,5 @@
+"use client";
+
 import Link from 'next/link';
 import Image from 'next/image';
 import { useSession } from 'next-auth/react';
@@ -8,15 +10,15 @@ const Navbar2 = () => {
     
     return (
         <header className="w-full absolute z-10"> 
-            <nav className="max-w-[1440px] mx-auto flex justify-between items-center sm:px-16 px-6 py-4">
+            <nav className="mx-auto flex justify-between items-center sm:px-16 px-6 py-4">
                 <Link href="/" className="flex justify-center items-center">
                     <Image
                         src="/atomo.svg"
                         alt="atomo"
                         width={50}
                         height={18}
-                        className="object-contain" 
-                    /> &nbsp;&nbsp;&nbsp; <strong>HealthSync</strong>
+                        className="object-contain logo" 
+                    /> <p className='navBarName'><strong>HealthSync</strong></p>
                 </Link>                
             </nav>
          </header>
